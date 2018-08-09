@@ -2,14 +2,14 @@ h1 {
   margin: 50px 0 20px 0;
 }
 
-div.clickable {
+div.individual {
   padding: 5px;
   background-color: lightgray;
   border-radius: 5px;
   box-shadow: 2px 2px 5px;
 }
 
-.back {
+.individual-back {
   display: none;
 }
 

@@ -16,16 +16,16 @@ $(document).ready(function() {
       "City/State/Zip: " + $("input#address2").val();
       //currently when we create a second contact, it's adding it twice. Once to the top level .addressbook, and once to the new .clickable div inside of that one.
     $(".addressbook").append("<div>" + "</div>");
-    $(".addressbook div").addClass("clickable");
-    $(".clickable").append("<p>" + contactName + "</p>");
-    $(".clickable p:first").addClass("front");
-    $(".clickable").append("<p>" + contactPage + "</p>");
-    $(".clickable p:last").addClass("back");
+    $(".addressbook div:last").addClass("clickable individual");
+    $(".individual").append("<p>" + contactName + "</p>");
+    $(".individual p:first").addClass("individual-front");
+    $(".individual").append("<p>" + contactPage + "</p>");
+    $(".individual p:last").addClass("individual-back");
   });
 
   $(".addressbook").click(function() {
-    $(".front", this).toggle();
-    $(".back", this).toggle();
+    $(".individual-front", this).toggle();
+    $(".individual-back", this).toggle();
   });
 
 });
