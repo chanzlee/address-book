@@ -9,7 +9,12 @@ div.individual {
   box-shadow: 2px 2px 5px;
 }
 
-.individual-back {
+.individual-front {
+  background-color: #afafaf;
+  padding: 0;
+}
+
+.hidden {
   display: none;
 }
 
